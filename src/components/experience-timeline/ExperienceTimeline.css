@@ -1,0 +1,58 @@
+.experience-timeline {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 64rem;
+  margin-inline: auto;
+  padding: 5rem 1.5rem;
+  border-top: 1px solid var(--border);
+}
+
+.experience-timeline__eyebrow {
+  color: var(--text);
+  font-size: 0.875rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.experience-timeline__content h2 {
+  margin: 0;
+  color: var(--text);
+}
+
+.experience-timeline__list {
+  margin-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.experience-timeline__item {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.experience-timeline__item h3 {
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.experience-timeline__item p,
+.experience-timeline__item time {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.experience-timeline__item time {
+  flex: none;
+}
+
+@media (min-width: 768px) {
+  .experience-timeline {
+    grid-template-columns: minmax(10rem, 1fr) minmax(0, 3fr);
+    gap: 3rem;
+    padding: 7rem 2rem;
+  }
+}

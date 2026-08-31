@@ -1,5 +1,6 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import DotGrid from "./components/dot-grid/DotGrid";
 import Navigation from "./components/navigation/Navigation";
 import Home from "./pages/home/Home";
 import StyleGuide from "./pages/style-guide/StyleGuide";
@@ -7,6 +8,7 @@ import StyleGuide from "./pages/style-guide/StyleGuide";
 function App() {
   return (
     <Router>
+      <DotGrid />
       <div className='App'>
         <Navigation />
         <main>
